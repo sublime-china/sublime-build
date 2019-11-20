@@ -1,0 +1,7 @@
+{
+    "file_regex": "^(?:go:)?[\t ](...*?):([0-9]*):?([0-9]*)",
+    "selector": "source.go",
+    "shell":true,
+    "encoding": "utf-8",
+    "cmd": ["go", "run", "$file"]
+}

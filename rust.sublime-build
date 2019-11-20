@@ -1,0 +1,10 @@
+{
+    "file_regex": "^(?:rs:)?[\t ](...*?):([0-9]*):?([0-9]*)",
+    "selector": "source.rust",
+    "shell":true,
+    "encoding": "utf-8",
+    "windows":
+        {
+            "cmd": ["rustc", "$file", "&&", "$file_base_name.exe"]
+        },
+}

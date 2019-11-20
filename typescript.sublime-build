@@ -1,0 +1,10 @@
+{
+    "file_regex": "^(?:ts:)?[\t ](...*?):([0-9]*):?([0-9]*)",
+    "selector": "source.ts, source.tsx",
+    "shell":true,
+    "encoding": "utf-8",
+    "windows":
+        {
+            "cmd": ["tsc", "$file", "&&", "node", "$file_base_name.js"]
+        },
+}

@@ -1,0 +1,7 @@
+{
+    "file_regex": "^(?:jl:)?[\t ](...*?):([0-9]*):?([0-9]*)",
+    "selector": "source.julia",
+    "shell":true,
+    "encoding": "utf-8",
+    "cmd": ["julia", "$file"]
+}
